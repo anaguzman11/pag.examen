@@ -1,0 +1,394 @@
+:root {
+    --color-base: #FDFDFD; 
+    --color-fondo-suave: #EAE7E2; 
+    --color-texto-principal: #b38c9b; 
+    --color-texto-secundario: #8D8983;
+     }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: var(--color-base);
+    color: var(--color-texto-principal);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+h1, h2, h3 {
+    font-family: "poiret one", sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: rosybrown;
+}
+
+
+.header {
+    background-color: rgba(122, 56, 56, 0.9);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-fondo-suave);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    size: 50px;
+}
+
+.logo {
+    height: 150px; 
+    margin: 10px;
+    align-items: right;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rosybrown;
+    font-family: "poiret one", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--color-acento);
+}
+
+
+
+
+.hero {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: 115px; 
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: "lexend";
+    text-shadow: 0 4px 15px #333;
+
+}
+
+.hero-text p {
+font-family: "Poiret One", sans-serif;
+  font-weight: 20rem;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-me-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: "poiret one", sans-serif;
+}
+
+.about-me-text p {
+    margin-bottom: 15px;
+    color: var(--color-texto-secundario);
+}
+
+
+
+
+.services {
+    background-color: radial-gradient(circle,rgb(218, 145, 176) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background-color: rgb(221, 216, 216);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: var(--color-texto-secundario);
+}
+
+
+.contact {
+    text-align: center;
+}
+.contact h2{
+    font-family: "poiret one", sans-serif;
+    color: rosybrown;
+    size: 40px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+.contact p{
+    font-family: "poiret one", sans-serif;
+    color: #333333;
+    font-size: 25px;
+
+}
+
+.contact-button:hover {
+    background-color: #682e15; 
+    size: 15px;
+    
+}
+.aside h3{
+    text-align: center;
+    color: #C87D5D;
+    font-family: "poiret one", sans-serif;
+    
+}
+
+
+
+.footer {
+    background-color: grey;
+    color: var(--color-fondo-suave);
+    padding: 40px 20px;
+    
+}
+
+
+.contenedor-tarjetas {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarjeta {
+  flex: 1 1 300px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 0; /* Permite que el contenido se encoga */
+  font-family: "poiret one", sans-serif
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #ffffffd3;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: #333;
+  color: rgb(170, 170, 170);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+.tarjeta-3d {
+   width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.tarjeta-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.tarjeta-3d:hover .tarjeta-inner {
+  transform: rotateY(180deg);
+}
+.tarjeta-frente,
+.tarjeta-dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease;
+  font-family: "poiret one", sans-serif
+}
+
+.tarjeta-frente {
+  background-color: #c4876d;
+  color: rgb(255, 255, 255);
+}
+.tarjeta-frente h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-family: "poiret one", sans-serif;
+}
+.tarjeta-frente p{
+  font-size: 1.1rem;
+  font-family: "poiret one", sans-serif;
+  text-align: center;
+}
+.tarjeta-dorso {
+  background-color: rosybrown;
+  color: white;
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+.imagenes-mascotas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.imagenes-mascotas img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.tarjeta-3d:hover .tarjeta-frente {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-3d:hover .tarjeta-dorso {
+  transform: rotateY(360deg);
+}
+.tarjeta-dorso .about-me-image{
+  transform: scale(0.8); 
+}
+
